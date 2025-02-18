@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>0218_revised1_copy</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+Traffic Accident<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Toggle layers</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <!-- Mapbox JS API !-->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+  <!-- Mapbox CSS!-->
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+  
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script> 
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' /> 
+</head>
+
+<body>
+  
+  
+  
+<div id='map'></div> 
+<div id='console'> 
+<h1>Road Safety Accidents</h1> 
+<p>Data: <a href='https://data.glasgow.gov.uk/'>Road Safety Accident Data </a> in City of Glasgow, 2021</p> 
+  
+
+
+  <div class="map-overlay" id="features">
+
+    <div id="pd">
+      <p>Hover Over A Data Zone!</p>
+    </div>
+
+  </div>
+  
+<!–– Slider goes below––>
+  
+<div class='session' id='sliderbar'> 
+<h2>Month: <label id='active-month'>1</label></h2> 
+<input id='slider' class='row' type='range' min='1' max='12' step='1' value='1' /> 
+</div> 
+  
+<!–– Radio buttons go below––> 
+ 
+<div class='session'> 
+<h2>Main Casuality type</h2> 
+<div class='row' id='filters'> 
+<input id='all' type='radio' name='toggle' value='all' checked='checked'> 
+<label for='all'>All</label> 
+<input id='Car occupant' type='radio' name='toggle' value='Car occupant'> 
+<label for='Car occupant'>Car occupant</label> 
+<input id='Pedestrian' type='radio' name='toggle' value='Pedestrian' > 
+<label for='Pedestrian' >Pedestrian</label> 
+</div> 
+</div> 
+</div> 
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
